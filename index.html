@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <title>Classic Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Inizio Header -->
+      <header>
+        <!-- Inizio Sezione Top Header -->
+        <section class="top">
+          <div class="header-top container">
+            <div class="social float-left">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+            <nav class="menu float-right">
+              <ul>
+                <li>Shopping Cart</li>
+                <li>My Account <i class="fas fa-chevron-down"></i></li>
+                <li class="cart"><i class="fas fa-shopping-cart"></i>Cart<i class="fas fa-chevron-down"></i></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+        <!--/Sezione Top Header -->
+        <div class="header-bottom container">
+          <img class="logo float-left" src="img/classic_shop_logo2x.png" alt="">
+          <nav class="float-right">
+            <ul v-for="li in menu">
+              <li>{{li}}<i class="fas fa-chevron-down"></i></li>
+            </ul>
+            <button type="button" name="button">Shop now!</button>
+            <a href="#"><i class="fas fa-search"></i></a>
+          </nav>
+        </div>
+        <div class="jumbotron">
+          <div class="text">
+            <h1>Brand New Arrivals</h1>
+            <div>New collection from new york</div>
+            <button type="button">View all</button>
+            <button type="button">lookbook</button>
+          </div>
+        </div>
+      </header>
+      <!-- / Header -->
+
+      <!-- Inizio Section Featured -->
+      <section class="featured container">
+        <div class="titolo">
+          <div class="linea"></div>
+          <h1>Featured Products</h1>
+          <div class="linea"></div>
+        </div>
+
+        <p>Must have products from our top seller</p>
+
+        <div class="menu">
+          <div class="active">Men</div>
+          <div>Women</div>
+          <div>Accesories</div>
+        </div>
+        <!-- Box-img -->
+        <div class="box-img">
+          <div class="img">
+            <img src="" alt="">
+            <h5>Black Leather Jacket</h5>
+            <div>Man, Jacket, Jeans</div>
+            <div class="price"> <span>$235</span>$200</div>
+          </div>
+          <div class="img">
+            <img src="" alt="">
+            <h5>Black Leather Suit</h5>
+            <div>Man,Jacket</div>
+            <div class="price">$176</div>
+          </div>
+          <div class="img">
+            <img src="" alt="">
+            <h5>Black Jacket Streep Tee</h5>
+            <div>Man, Jacket, Suits</div>
+            <div class="price">$580</div>
+          </div>
+          <div class="img">
+            <img src="" alt="">
+            <h5>Modern Black Leather Suit</h5>
+            <div>Man,Jacket</div>
+            <div class="price">$96</div>
+          </div>
+        </div>
+        <!-- /Box-img -->
+
+      </section>
+      <!-- /Section Featured -->
+
+      <!-- Inizio Section Collection -->
+      <section>
+
+      </section>
+      <!-- /Section Collection -->
+
+      <!-- Inizio Section Best Seller -->
+      <section class="container">
+
+      </section>
+      <!-- /Section Best Seller -->
+
+      <!-- Inizio Section New Arrivals -->
+      <section class="container">
+
+      </section>
+      <!-- /Section New Arrivals -->
+
+      <!-- Inizio Section Blog -->
+      <section class="container">
+
+      </section>
+      <!-- /Section Blog -->
+
+      <!-- Inizio Footer (top-middle-bottom) -->
+      <footer class="container">
+        <div class="footer-top">
+
+        </div>
+        <div class="footer-middle">
+
+        </div>
+        <div class="footer-bottom">
+
+        </div>
+
+      </footer>
+      <!-- /Footer (top-middle-bottom) -->
+    </div>
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>

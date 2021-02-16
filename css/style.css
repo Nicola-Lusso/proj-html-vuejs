@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Generali / Riutilizzabili */
+.container{
+  width: 70%;
+  margin: auto;
+}
+
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float: right;
+}
+
+ul li{
+  list-style: none;
+  display: inline;
+
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+header{
+  border-top: 4px solid #427ed5;
+}
+
+/* .top{
+  height: 50px;
+  margin-top: 25px;
+} */
+
+header .top{
+  border-bottom: 1px solid grey;
+  width: 100%;
+  height: 50px;
+}
+
+.header-top .social i{
+  padding-right: 20px;
+  line-height: 2.8;
+}
+
+
+.header-top nav ul li{
+  border-right: 1px solid gray;
+  padding: 17px;
+  line-height: 2.8;
+  cursor: pointer;
+}
+
+.header-top nav li .cart{
+  text-transform: uppercase;
+
+}
+li.cart{
+  background-color: rgba(123, 122, 129, 0.1);
+}
+.header-bottom{
+  height: 100px;
+}
+
+.header-bottom nav ul li{
+  padding-right: 30px;
+  font-size: 12px;
+  color: gray;
+  cursor: pointer;
+}
+.header-bottom nav{
+  display: flex;
+  flex-direction: row;
+  line-height: 2.6;
+  margin-top: 20px;
+}
+
+.header-bottom nav button{
+  background-color: #427ed5;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 10px 18px;
+
+}
+
+.header-bottom nav a{
+  color: gray;
+  font-size: 13px;
+  padding-left: 30px;
+  margin-top: 5px;
+}
+
+.logo{
+  width: 15%;
+  margin-top: 24px;
+}
+
+.home{
+  width: 100%;
+}
+
+.jumbotron{
+  width: 100%;
+  height: 400px;
+  background-image: url('..img/jumbo.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.jumbotron .text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: black;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+.footer-bottom{
+  background-color: #2a2f33;
+}
+.footer-middle{
+  background-color: #64686c;
+}
+.footer-middle{
+  background-color: #6b6a6b;
+}
