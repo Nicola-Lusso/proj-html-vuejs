@@ -21,8 +21,8 @@
 ul li{
   list-style: none;
   display: inline;
-
 }
+
 body{
   font-family: 'Montserrat', sans-serif;
 }
@@ -32,10 +32,6 @@ header{
   border-top: 4px solid #427ed5;
 }
 
-/* .top{
-  height: 50px;
-  margin-top: 25px;
-} */
 
 header .top{
   border-bottom: 1px solid grey;
@@ -60,9 +56,11 @@ header .top{
   text-transform: uppercase;
 
 }
+
 li.cart{
   background-color: rgba(123, 122, 129, 0.1);
 }
+
 .header-bottom{
   height: 100px;
 }
@@ -73,6 +71,7 @@ li.cart{
   color: gray;
   cursor: pointer;
 }
+
 .header-bottom nav{
   display: flex;
   flex-direction: row;
@@ -105,29 +104,249 @@ li.cart{
   width: 100%;
 }
 
-.jumbotron{
+/* JUMBOTRON */
+
+.jumbotron img{
   width: 100%;
-  height: 400px;
-  background-image: url('..img/jumbo.jpg');
-  background-size: cover;
+  height: 500px;
+  /* background-size: cover;
   background-position: center;
-  position: relative;
+  position: relative; */
 }
 
 .jumbotron .text{
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%,-50%);
   text-align: center;
-  color: black;
+  color: white;
 }
 
+.jumbotron .text h1{
+  font-size: 60px;
+  padding-bottom: 20px;
+}
 
+.jumbotron .text div{
+  text-transform: uppercase;
+  font-size: 20px;
+}
 
+.jumbotron .text button{
+  background-color: rgba(242, 241, 240, 0.07);
+  border: 1px solid white;
+  border-radius: 50px;
+  color: white;
+  padding: 16px 30px;
+  margin: 20px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
+/* FEATURED */
+.featured{
+  margin-top: 80px;
+  font-weight: bold;
+}
 
+.titolo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+.titolo h1{
+  font-size: 30px;
+  margin: 0px 20px;
+}
+
+.linea{
+  height: 1px;
+  flex-grow: 1;
+  background-color: gray;
+}
+
+.featured p{
+  text-align: center;
+  margin-top: 10px;
+  color: gray;
+  font-size: 12px;
+}
+
+.featured .menu{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.featured .menu span{
+  padding: 10px 25px;
+  border: 1px solid grey;
+  font-size: 14px;
+}
+
+.featured .active{
+  background-color: rgba(154, 154, 154, 0.32);
+}
+
+.featured .menu span:hover{
+  background-color: rgba(154, 154, 154, 0.32);
+  cursor: pointer;
+}
+
+/* BOX-IMG */
+.box-img{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-img .img{
+  margin:20px;
+  text-align: left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.featured .price{
+  margin-top: 5px;
+  font-size: 16px;
+  color: #427ed5;
+}
+
+.featured .price span{
+  text-decoration: line-through;
+  margin-right: 10px;
+  font-size: 10px;
+}
+
+.featured .img h6{
+  color: gray;
+  margin-top: 5px;
+}
+
+/* COLLECTION */
+.collection{
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+
+}
+.collection img{
+  float: left;
+  width: 110%;
+}
+
+.collection .box-img{
+  width: 33%;
+  position: relative;
+}
+
+.collection .text{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: white;
+}
+
+.collection .text h1{
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.collection .text p{
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.collection button{
+  background-color: rgba(224, 224, 227, 0.11);
+  text-transform: uppercase;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid white;
+  margin-top: 30px;
+}
+
+/* BEST-SELLER */
+.best-seller{
+  margin-top: 90px;
+}
+
+.best-seller p{
+  text-align: center;
+  color: gray;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.best-seller .box-img{
+  display: flex;
+  flex-direction: row;
+}
+
+.best-seller .box-img>i{
+  background-color: gray;
+  padding: 20px 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.best-seller .img{
+  position: relative;
+}
+
+.best-seller .img h5{
+  font-size: 20px;
+}
+
+.best-seller .img p{
+  color: white;
+}
+
+.best-seller .layer{
+  display: none;
+}
+
+.best-seller .img:hover .layer{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#8778b6,#e280b1);
+  opacity: 0.7;
+  color: white;
+}
+
+.best-seller .price{
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.best-seller .options{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 8px;
+  bottom: 20px;
+  font-size: 12px;
+}
 
 
 /* Footer */
