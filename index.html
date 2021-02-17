@@ -17,10 +17,7 @@
         <section class="top">
           <div class="header-top container">
             <div class="social float-left">
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-youtube"></i>
+              <a v-for="social in column1.socials" :href="social"> <i :class="social"> </i></a>
             </div>
             <nav class="menu float-right">
               <ul>
@@ -73,23 +70,27 @@
         <div class="box-img">
           <div class="img">
             <img src="img/articolo1.jpg" alt="">
+            <div class="layer"><i class="circle far fa-check-square"></i></div>
             <h5>Black Leather Jacket</h5>
             <h6>Man, Jacket, Jeans</h6>
             <div class="price"> <span>$235</span>$200</div>
           </div>
           <div class="img">
             <img src="img/articolo2.jpg" alt="">
+            <div class="layer"><i class="circle far fa-check-square"></i></div>
             <h5>Black Leather Suit</h5>
             <h6>Man,Jacket</h6>
             <div class="price">$176</div>
           </div>
           <div class="img">
+            <div class="layer"><i class="circle far fa-check-square"></i></div>
             <img src="img/articolo3.jpg" alt="">
             <h5>Black Jacket Streep Tee</h5>
             <h6>Man, Jacket, Suits</h6>
             <div class="price">$580</div>
           </div>
           <div class="img">
+            <div class="layer"><i class="circle far fa-check-square "></i></div>
             <img src="img/articolo4.jpg" alt="">
             <h5>Modern Black Leather Suit</h5>
             <h6>Man,Jacket</p>

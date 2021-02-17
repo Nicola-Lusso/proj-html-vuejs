@@ -9,6 +9,7 @@ const app = new Vue({
            'News',
            'Elements',
           ],
+
       column1: {
         logo: "img/logo.png",
         info: [
